@@ -1,0 +1,12 @@
+# Dependensi khusus dashboard versi online (Streamlit Community Cloud).
+# Tidak memuat pyspark, torch, dan pytorch-forecasting karena dashboard hanya
+# membaca tabel Serving (Parquet). Versi disamakan dengan lingkungan lokal.
+streamlit==1.67.0
+pandas==3.0.1
+numpy==1.26.4
+pyarrow==24.0.0
+plotly==6.8.0
+networkx==3.4.2
+pyvis==0.3.2
+Jinja2==3.1.4
+requests==2.32.3

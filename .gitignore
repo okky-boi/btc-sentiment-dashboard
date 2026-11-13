@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Rahasia dan konfigurasi lokal
+.env
+.streamlit/secrets.toml
+
+# Log dan artefak training (tidak dibutuhkan dashboard)
+*.log
+lightning_logs/
+*.ckpt
+
+# File sementara editor / Office / OS
+~$*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Catatan: lake/serving/*.parquet SENGAJA tidak di-ignore,
+# karena dashboard online membaca snapshot data dari folder tersebut.
